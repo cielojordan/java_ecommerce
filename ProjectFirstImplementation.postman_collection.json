@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "0bf1b2bb-7166-43d0-aff9-a8714783c290",
+		"name": "ProjectFirstImplementation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "manager",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/Manager/Remove?articleName=keyboard&quantity=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"Manager",
+						"Remove"
+					],
+					"query": [
+						{
+							"key": "articleName",
+							"value": "keyboard"
+						},
+						{
+							"key": "quantity",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9998/Client/Register?name=test&password=123&email=test@test.fr",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9998",
+					"path": [
+						"Client",
+						"Register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test"
+						},
+						{
+							"key": "password",
+							"value": "123"
+						},
+						{
+							"key": "email",
+							"value": "test@test.fr"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StoreHouse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9997/StoreHouse/sendItem?name=speaker&quantity=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9997",
+					"path": [
+						"StoreHouse",
+						"sendItem"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "speaker"
+						},
+						{
+							"key": "quantity",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9996/Shop/askItem?name=speaker&quantity=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9996",
+					"path": [
+						"Shop",
+						"askItem"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "speaker"
+						},
+						{
+							"key": "quantity",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lockers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9995/Lockers/lock?clientID=13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9995",
+					"path": [
+						"Lockers",
+						"lock"
+					],
+					"query": [
+						{
+							"key": "clientID",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
